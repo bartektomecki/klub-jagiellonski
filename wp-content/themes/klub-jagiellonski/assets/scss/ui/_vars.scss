@@ -1,0 +1,25 @@
+/*
+ * Typography basic setting
+ */
+$base-font-size: 16px;
+$base-line-height: 1.5em;
+
+$regular-font: 'PT Sans', 'sans-serif';
+$header-font: 'Dosis', 'sans-serif';
+
+/*
+ * CSS WIZARDRY VARS
+ */
+$push: true;
+$pull: true;
+
+ $breakpoints: (
+     'smart' '(max-width: 480px)',
+     'tab' '(min-width: 481px) and (max-width: 1023px)',
+     'portable' '(max-width: 1023px)',
+     'desk' '(min-width: 1024px)'
+ );
+
+ $breakpoint-has-widths: ('smart', 'tab', 'portable', 'desk');
+ $breakpoint-has-push:   ('smart', 'tab', 'portable', 'desk');
+ $breakpoint-has-pull:   ('smart', 'tab', 'portable', 'desk');

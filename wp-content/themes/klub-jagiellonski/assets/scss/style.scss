@@ -1,0 +1,35 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass/css3";
+@import "compass/typography";
+
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,latin-ext);
+
+@import "ui/vars";
+
+@import "tools/normalize";
+@import "tools/_csswizardry-grids";
+
+body {
+	font-family: $regular-font;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+}
+
+h1 {
+	font-family: $header-font;
+}
+
+.bartek {
+	@include border-radius(5px);
+}
+
+.onet {
+	color: red;
+	font-size: 14px;
+	font-weight: bold;
+	@include box-sizing(border-box);
+}

@@ -1,0 +1,2573 @@
+@charset "ISO-8859-2";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,latin-ext);
+/*
+ * Typography basic setting
+ */
+/*
+ * CSS WIZARDRY VARS
+ */
+/* ==========================================================================
+   Normalize.scss settings
+   ========================================================================== */
+/**
+ * Includes legacy browser support IE6/7
+ *
+ * Set to false if you want to drop support for IE6 and IE7
+ */
+/* Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *  user zoom.
+ * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *  `em` units.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\0000323}}
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\0000336}}
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\0000360}}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\0000372}}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\0000386}}
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\0000397}}
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003108}}
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003117}}
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003129}}
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003138}}
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003152}}
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003161}}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Addresses styling not present in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003197}}
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003236}}
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003245}}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003252}}
+sup {
+  top: -0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003256}}
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 8/9/10.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003311}}
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003322}}
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003333}}
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003341}}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003351}}
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003363}}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *  Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 4. Improves appearance and consistency in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003391}}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003405}}
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003417}}
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *  and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *  `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *  Known issue: inner spacing remains in IE 6.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003434}}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003447}}
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003456}}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003466}}
+input {
+  line-height: normal; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ *  Known issue: excess padding remains in IE 6.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003477}}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003493}}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *  (include `-moz` to future-proof).
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003503}}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003517}}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003525}}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Corrects text not wrapping in Firefox 3.
+ * 4. Corrects alignment displayed oddly in IE 6/7.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003538}}
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003551}}
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003560}}
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003571}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_normalize\.scss}line{font-family:\00003577}}
+td,
+th {
+  padding: 0; }
+
+/*------------------------------------*\
+    $CSSWIZARDRY-GRIDS
+\*------------------------------------*/
+/**
+ * CONTENTS
+ * INTRODUCTION.........How the grid system works.
+ * VARIABLES............Your settings.
+ * MIXINS...............Library mixins.
+ * GRID SETUP...........Build the grid structure.
+ * WIDTHS...............Build our responsive widths around our breakpoints.
+ * PUSH.................Push classes.
+ * PULL.................Pull classes.
+ */
+/*------------------------------------*\
+    $INTRODUCTION
+\*------------------------------------*/
+/**
+ * csswizardry grids provides you with widths to suit a number of breakpoints
+ * designed around devices of a size you specify. Out of the box, csswizardry
+ * grids caters to the following types of device:
+ *
+ * palm     --  palm-based devices, like phones and small tablets
+ * lap      --  lap-based devices, like iPads or laptops
+ * portable --  all of the above
+ * desk     --  stationary devices, like desktop computers
+ * regular  --  any/all types of device
+ *
+ * These namespaces are then used in the library to give you the ability to
+ * manipulate your layouts based around them, for example:
+ *
+   <div class="grid__item  one-whole  lap--one-half  desk--one-third">
+ *
+ * This would give you a grid item which is 100% width unless it is on a lap
+ * device, at which point it become 50% wide, or it is on a desktop device, at
+ * which point it becomes 33.333% width.
+ *
+ * csswizardry grids also has push and pull classes which allow you to nudge
+ * grid items left and right by a defined amount. These follow the same naming
+ * convention as above, but are prepended by either `push--` or `pull--`, for
+ * example:
+ *
+   `class="grid__item  one-half  push--one-half"`
+ *
+ * This would give you a grid item which is 50% width and pushed over to the
+ * right by 50%.
+ *
+ * All classes in csswizardry grids follow this patten, so you should fairly
+ * quickly be able to piece together any combinations you can imagine, for
+ * example:
+ *
+   `class="grid__item  one-whole  lap--one-half  desk--one-third  push--desk--one-third"`
+ *
+   `class="grid__item  one-quarter  palm--one-half  push--palm--one-half"`
+ *
+   `class="grid__item  palm--one-third  desk--five-twelfths"`
+ */
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/**
+ * If you are building a non-responsive site but would still like to use
+ * csswizardry-grids, set this to ‘false’:
+ */
+/**
+ * Is this build mobile first? Setting to ‘true’ means that all grids will be
+ * 100% width if you do not apply a more specific class to them.
+ */
+/**
+ * Set the spacing between your grid items.
+ */
+/**
+ * Would you like Sass’ silent classes, or regular CSS classes?
+ */
+/**
+ * Would you like push and pull classes enabled?
+ */
+/**
+ * Using `inline-block` means that the grid items need their whitespace removing
+ * in order for them to work correctly. Set the following to true if you are
+ * going to achieve this by manually removing/commenting out any whitespace in
+ * your HTML yourself.
+ *
+ * Setting this to false invokes a hack which cannot always be guaranteed,
+ * please see the following for more detail:
+ *
+ * github.com/csswizardry/csswizardry-grids/commit/744d4b23c9d2b77d605b5991e54a397df72e0688
+ * github.com/csswizardry/inuit.css/issues/170#issuecomment-14859371
+ */
+/**
+ * Define your breakpoints. The first value is the prefix that shall be used for
+ * your classes (e.g. `.palm--one-half`), the second value is the media query
+ * that the breakpoint fires at.
+ */
+/**
+ * Define which namespaced breakpoints you would like to generate for each of
+ * widths, push and pull. This is handy if you only need pull on, say, desk, or
+ * you only need a new width breakpoint at mobile sizes. It allows you to only
+ * compile as much CSS as you need. All are turned on by default, but you can
+ * add and remove breakpoints at will.
+ *
+ * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
+ * have been set to ‘true’.
+ */
+/**
+ * You do not need to edit anything from this line onward; csswizardry-grids is
+ * good to go. Happy griddin’!
+ */
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/**
+ * These mixins are for the library to use only, you should not need to modify
+ * them at all.
+ *
+ * Enclose a block of code with a media query as named in `$breakpoints`.
+ */
+/**
+ * Drop relative positioning into silent classes which can’t take advantage of
+ * the `[class*="push--"]` and `[class*="pull--"]` selectors.
+ */
+/*------------------------------------*\
+    $GRID SETUP
+\*------------------------------------*/
+/**
+ * 1. Allow the grid system to be used on lists.
+ * 2. Remove any margins and paddings that might affect the grid system.
+ * 3. Apply a negative `margin-left` to negate the columns’ gutters.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003213}}
+.grid {
+  list-style: none;
+  /* [1] */
+  margin: 0;
+  /* [2] */
+  padding: 0;
+  /* [2] */
+  margin-left: -24px;
+  /* [3] */ }
+
+/**
+ * 1. Cause columns to stack side-by-side.
+ * 2. Space columns apart.
+ * 3. Align columns to the tops of each other.
+ * 4. Full-width unless told to behave otherwise.
+ * 5. Required to combine fluid widths and fixed gutters.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003239}}
+.grid__item {
+  display: inline-block;
+  /* [1] */
+  padding-left: 24px;
+  /* [2] */
+  vertical-align: top;
+  /* [3] */
+  width: 100%;
+  /* [4] */
+  -webkit-box-sizing: border-box;
+  /* [5] */
+  -moz-box-sizing: border-box;
+  /* [5] */
+  box-sizing: border-box;
+  /* [5] */ }
+
+/**
+ * Reversed grids allow you to structure your source in the opposite order to
+ * how your rendered layout will appear. Extends `.grid`.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003260}}
+.grid--rev {
+  direction: rtl;
+  text-align: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003264}}
+  .grid--rev > .grid__item {
+    direction: ltr;
+    text-align: left; }
+
+/**
+ * Gutterless grids have all the properties of regular grids, minus any spacing.
+ * Extends `.grid`.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003275}}
+.grid--full {
+  margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003278}}
+  .grid--full > .grid__item {
+    padding-left: 0; }
+
+/**
+ * Align the entire grid to the right. Extends `.grid`.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003287}}
+.grid--right {
+  text-align: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003290}}
+  .grid--right > .grid__item {
+    text-align: left; }
+
+/**
+ * Centered grids align grid items centrally without needing to use push or pull
+ * classes. Extends `.grid`.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003300}}
+.grid--center {
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003303}}
+  .grid--center > .grid__item {
+    text-align: left; }
+
+/**
+ * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
+ * `.grid`.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003315}}
+.grid--middle > .grid__item {
+  vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003322}}
+.grid--bottom > .grid__item {
+  vertical-align: bottom; }
+
+/**
+ * Create grids with narrower gutters. Extends `.grid`.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003331}}
+.grid--narrow {
+  margin-left: -12px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003334}}
+  .grid--narrow > .grid__item {
+    padding-left: 12px; }
+
+/**
+ * Create grids with wider gutters. Extends `.grid`.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003343}}
+.grid--wide {
+  margin-left: -48px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003346}}
+  .grid--wide > .grid__item {
+    padding-left: 48px; }
+
+/*------------------------------------*\
+    $WIDTHS
+\*------------------------------------*/
+/**
+ * Create our width classes, prefixed by the specified namespace.
+ */
+/**
+ * Our regular, non-responsive width classes.
+ */
+/**
+ * Whole
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003367}}
+.one-whole {
+  width: 100%; }
+
+/**
+ * Halves
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003373}}
+.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {
+  width: 50%; }
+
+/**
+ * Thirds
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003379}}
+.one-third, .two-sixths, .four-twelfths {
+  width: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003380}}
+.two-thirds, .four-sixths, .eight-twelfths {
+  width: 66.666%; }
+
+/**
+ * Quarters
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003386}}
+.one-quarter, .two-eighths, .three-twelfths {
+  width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003388}}
+.three-quarters, .six-eighths, .nine-twelfths {
+  width: 75%; }
+
+/**
+ * Fifths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003394}}
+.one-fifth, .two-tenths {
+  width: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003395}}
+.two-fifths, .four-tenths {
+  width: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003396}}
+.three-fifths, .six-tenths {
+  width: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003397}}
+.four-fifths, .eight-tenths {
+  width: 80%; }
+
+/**
+ * Sixths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003403}}
+.one-sixth, .two-twelfths {
+  width: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003407}}
+.five-sixths, .ten-twelfths {
+  width: 83.333%; }
+
+/**
+ * Eighths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003413}}
+.one-eighth {
+  width: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003415}}
+.three-eighths {
+  width: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003417}}
+.five-eighths {
+  width: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003419}}
+.seven-eighths {
+  width: 87.5%; }
+
+/**
+ * Tenths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003425}}
+.one-tenth {
+  width: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003427}}
+.three-tenths {
+  width: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003431}}
+.seven-tenths {
+  width: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003433}}
+.nine-tenths {
+  width: 90%; }
+
+/**
+ * Twelfths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003439}}
+.one-twelfth {
+  width: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003443}}
+.five-twelfths {
+  width: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003445}}
+.seven-twelfths {
+  width: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003449}}
+.eleven-twelfths {
+  width: 91.666%; }
+
+/**
+ * Our responsive classes, if we have enabled them.
+ */
+@media only screen and (max-width: 480px) {
+  /**
+   * Whole
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003367}}
+  .smart--one-whole {
+    width: 100%; }
+
+  /**
+   * Halves
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003373}}
+  .smart--one-half, .smart--two-quarters, .smart--three-sixths, .smart--four-eighths, .smart--five-tenths, .smart--six-twelfths {
+    width: 50%; }
+
+  /**
+   * Thirds
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003379}}
+  .smart--one-third, .smart--two-sixths, .smart--four-twelfths {
+    width: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003380}}
+  .smart--two-thirds, .smart--four-sixths, .smart--eight-twelfths {
+    width: 66.666%; }
+
+  /**
+   * Quarters
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003386}}
+  .smart--one-quarter, .smart--two-eighths, .smart--three-twelfths {
+    width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003388}}
+  .smart--three-quarters, .smart--six-eighths, .smart--nine-twelfths {
+    width: 75%; }
+
+  /**
+   * Fifths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003394}}
+  .smart--one-fifth, .smart--two-tenths {
+    width: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003395}}
+  .smart--two-fifths, .smart--four-tenths {
+    width: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003396}}
+  .smart--three-fifths, .smart--six-tenths {
+    width: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003397}}
+  .smart--four-fifths, .smart--eight-tenths {
+    width: 80%; }
+
+  /**
+   * Sixths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003403}}
+  .smart--one-sixth, .smart--two-twelfths {
+    width: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003407}}
+  .smart--five-sixths, .smart--ten-twelfths {
+    width: 83.333%; }
+
+  /**
+   * Eighths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003413}}
+  .smart--one-eighth {
+    width: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003415}}
+  .smart--three-eighths {
+    width: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003417}}
+  .smart--five-eighths {
+    width: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003419}}
+  .smart--seven-eighths {
+    width: 87.5%; }
+
+  /**
+   * Tenths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003425}}
+  .smart--one-tenth {
+    width: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003427}}
+  .smart--three-tenths {
+    width: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003431}}
+  .smart--seven-tenths {
+    width: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003433}}
+  .smart--nine-tenths {
+    width: 90%; }
+
+  /**
+   * Twelfths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003439}}
+  .smart--one-twelfth {
+    width: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003443}}
+  .smart--five-twelfths {
+    width: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003445}}
+  .smart--seven-twelfths {
+    width: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003449}}
+  .smart--eleven-twelfths {
+    width: 91.666%; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  /**
+   * Whole
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003367}}
+  .tab--one-whole {
+    width: 100%; }
+
+  /**
+   * Halves
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003373}}
+  .tab--one-half, .tab--two-quarters, .tab--three-sixths, .tab--four-eighths, .tab--five-tenths, .tab--six-twelfths {
+    width: 50%; }
+
+  /**
+   * Thirds
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003379}}
+  .tab--one-third, .tab--two-sixths, .tab--four-twelfths {
+    width: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003380}}
+  .tab--two-thirds, .tab--four-sixths, .tab--eight-twelfths {
+    width: 66.666%; }
+
+  /**
+   * Quarters
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003386}}
+  .tab--one-quarter, .tab--two-eighths, .tab--three-twelfths {
+    width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003388}}
+  .tab--three-quarters, .tab--six-eighths, .tab--nine-twelfths {
+    width: 75%; }
+
+  /**
+   * Fifths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003394}}
+  .tab--one-fifth, .tab--two-tenths {
+    width: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003395}}
+  .tab--two-fifths, .tab--four-tenths {
+    width: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003396}}
+  .tab--three-fifths, .tab--six-tenths {
+    width: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003397}}
+  .tab--four-fifths, .tab--eight-tenths {
+    width: 80%; }
+
+  /**
+   * Sixths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003403}}
+  .tab--one-sixth, .tab--two-twelfths {
+    width: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003407}}
+  .tab--five-sixths, .tab--ten-twelfths {
+    width: 83.333%; }
+
+  /**
+   * Eighths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003413}}
+  .tab--one-eighth {
+    width: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003415}}
+  .tab--three-eighths {
+    width: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003417}}
+  .tab--five-eighths {
+    width: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003419}}
+  .tab--seven-eighths {
+    width: 87.5%; }
+
+  /**
+   * Tenths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003425}}
+  .tab--one-tenth {
+    width: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003427}}
+  .tab--three-tenths {
+    width: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003431}}
+  .tab--seven-tenths {
+    width: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003433}}
+  .tab--nine-tenths {
+    width: 90%; }
+
+  /**
+   * Twelfths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003439}}
+  .tab--one-twelfth {
+    width: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003443}}
+  .tab--five-twelfths {
+    width: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003445}}
+  .tab--seven-twelfths {
+    width: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003449}}
+  .tab--eleven-twelfths {
+    width: 91.666%; } }
+@media only screen and (max-width: 1023px) {
+  /**
+   * Whole
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003367}}
+  .portable--one-whole {
+    width: 100%; }
+
+  /**
+   * Halves
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003373}}
+  .portable--one-half, .portable--two-quarters, .portable--three-sixths, .portable--four-eighths, .portable--five-tenths, .portable--six-twelfths {
+    width: 50%; }
+
+  /**
+   * Thirds
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003379}}
+  .portable--one-third, .portable--two-sixths, .portable--four-twelfths {
+    width: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003380}}
+  .portable--two-thirds, .portable--four-sixths, .portable--eight-twelfths {
+    width: 66.666%; }
+
+  /**
+   * Quarters
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003386}}
+  .portable--one-quarter, .portable--two-eighths, .portable--three-twelfths {
+    width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003388}}
+  .portable--three-quarters, .portable--six-eighths, .portable--nine-twelfths {
+    width: 75%; }
+
+  /**
+   * Fifths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003394}}
+  .portable--one-fifth, .portable--two-tenths {
+    width: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003395}}
+  .portable--two-fifths, .portable--four-tenths {
+    width: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003396}}
+  .portable--three-fifths, .portable--six-tenths {
+    width: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003397}}
+  .portable--four-fifths, .portable--eight-tenths {
+    width: 80%; }
+
+  /**
+   * Sixths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003403}}
+  .portable--one-sixth, .portable--two-twelfths {
+    width: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003407}}
+  .portable--five-sixths, .portable--ten-twelfths {
+    width: 83.333%; }
+
+  /**
+   * Eighths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003413}}
+  .portable--one-eighth {
+    width: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003415}}
+  .portable--three-eighths {
+    width: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003417}}
+  .portable--five-eighths {
+    width: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003419}}
+  .portable--seven-eighths {
+    width: 87.5%; }
+
+  /**
+   * Tenths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003425}}
+  .portable--one-tenth {
+    width: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003427}}
+  .portable--three-tenths {
+    width: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003431}}
+  .portable--seven-tenths {
+    width: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003433}}
+  .portable--nine-tenths {
+    width: 90%; }
+
+  /**
+   * Twelfths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003439}}
+  .portable--one-twelfth {
+    width: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003443}}
+  .portable--five-twelfths {
+    width: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003445}}
+  .portable--seven-twelfths {
+    width: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003449}}
+  .portable--eleven-twelfths {
+    width: 91.666%; } }
+@media only screen and (min-width: 1024px) {
+  /**
+   * Whole
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003367}}
+  .desk--one-whole {
+    width: 100%; }
+
+  /**
+   * Halves
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003373}}
+  .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths {
+    width: 50%; }
+
+  /**
+   * Thirds
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003379}}
+  .desk--one-third, .desk--two-sixths, .desk--four-twelfths {
+    width: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003380}}
+  .desk--two-thirds, .desk--four-sixths, .desk--eight-twelfths {
+    width: 66.666%; }
+
+  /**
+   * Quarters
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003386}}
+  .desk--one-quarter, .desk--two-eighths, .desk--three-twelfths {
+    width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003388}}
+  .desk--three-quarters, .desk--six-eighths, .desk--nine-twelfths {
+    width: 75%; }
+
+  /**
+   * Fifths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003394}}
+  .desk--one-fifth, .desk--two-tenths {
+    width: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003395}}
+  .desk--two-fifths, .desk--four-tenths {
+    width: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003396}}
+  .desk--three-fifths, .desk--six-tenths {
+    width: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003397}}
+  .desk--four-fifths, .desk--eight-tenths {
+    width: 80%; }
+
+  /**
+   * Sixths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003403}}
+  .desk--one-sixth, .desk--two-twelfths {
+    width: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003407}}
+  .desk--five-sixths, .desk--ten-twelfths {
+    width: 83.333%; }
+
+  /**
+   * Eighths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003413}}
+  .desk--one-eighth {
+    width: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003415}}
+  .desk--three-eighths {
+    width: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003417}}
+  .desk--five-eighths {
+    width: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003419}}
+  .desk--seven-eighths {
+    width: 87.5%; }
+
+  /**
+   * Tenths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003425}}
+  .desk--one-tenth {
+    width: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003427}}
+  .desk--three-tenths {
+    width: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003431}}
+  .desk--seven-tenths {
+    width: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003433}}
+  .desk--nine-tenths {
+    width: 90%; }
+
+  /**
+   * Twelfths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003439}}
+  .desk--one-twelfth {
+    width: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003443}}
+  .desk--five-twelfths {
+    width: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003445}}
+  .desk--seven-twelfths {
+    width: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003449}}
+  .desk--eleven-twelfths {
+    width: 91.666%; } }
+/*------------------------------------*\
+    $PUSH
+\*------------------------------------*/
+/**
+ * Push classes, to move grid items over to the right by certain amounts.
+ */
+/**
+ * Not a particularly great selector, but the DRYest way to do things.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003580}}
+[class*="push--"] {
+  position: relative; }
+
+/**
+ * Whole
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003490}}
+.push--one-whole {
+  left: 100%; }
+
+/**
+ * Halves
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003496}}
+.push--one-half, .push--two-quarters, .push--three-sixths, .push--four-eighths, .push--five-tenths, .push--six-twelfths {
+  left: 50%; }
+
+/**
+ * Thirds
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003502}}
+.push--one-third, .push--two-sixths, .push--four-twelfths {
+  left: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003503}}
+.push--two-thirds, .push--four-sixths, .push--eight-twelfths {
+  left: 66.666%; }
+
+/**
+ * Quarters
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003509}}
+.push--one-quarter, .push--two-eighths, .push--three-twelfths {
+  left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003511}}
+.push--three-quarters, .push--six-eighths, .push--nine-twelfths {
+  left: 75%; }
+
+/**
+ * Fifths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003517}}
+.push--one-fifth, .push--two-tenths {
+  left: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003518}}
+.push--two-fifths, .push--four-tenths {
+  left: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003519}}
+.push--three-fifths, .push--six-tenths {
+  left: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003520}}
+.push--four-fifths, .push--eight-tenths {
+  left: 80%; }
+
+/**
+ * Sixths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003526}}
+.push--one-sixth, .push--two-twelfths {
+  left: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003530}}
+.push--five-sixths, .push--ten-twelfths {
+  left: 83.333%; }
+
+/**
+ * Eighths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003536}}
+.push--one-eighth {
+  left: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003538}}
+.push--three-eighths {
+  left: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003540}}
+.push--five-eighths {
+  left: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003542}}
+.push--seven-eighths {
+  left: 87.5%; }
+
+/**
+ * Tenths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003548}}
+.push--one-tenth {
+  left: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003550}}
+.push--three-tenths {
+  left: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003554}}
+.push--seven-tenths {
+  left: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003556}}
+.push--nine-tenths {
+  left: 90%; }
+
+/**
+ * Twelfths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003562}}
+.push--one-twelfth {
+  left: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003566}}
+.push--five-twelfths {
+  left: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003568}}
+.push--seven-twelfths {
+  left: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003572}}
+.push--eleven-twelfths {
+  left: 91.666%; }
+
+@media only screen and (max-width: 480px) {
+  /**
+   * Whole
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003490}}
+  .push--smart--one-whole {
+    left: 100%; }
+
+  /**
+   * Halves
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003496}}
+  .push--smart--one-half, .push--smart--two-quarters, .push--smart--three-sixths, .push--smart--four-eighths, .push--smart--five-tenths, .push--smart--six-twelfths {
+    left: 50%; }
+
+  /**
+   * Thirds
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003502}}
+  .push--smart--one-third, .push--smart--two-sixths, .push--smart--four-twelfths {
+    left: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003503}}
+  .push--smart--two-thirds, .push--smart--four-sixths, .push--smart--eight-twelfths {
+    left: 66.666%; }
+
+  /**
+   * Quarters
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003509}}
+  .push--smart--one-quarter, .push--smart--two-eighths, .push--smart--three-twelfths {
+    left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003511}}
+  .push--smart--three-quarters, .push--smart--six-eighths, .push--smart--nine-twelfths {
+    left: 75%; }
+
+  /**
+   * Fifths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003517}}
+  .push--smart--one-fifth, .push--smart--two-tenths {
+    left: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003518}}
+  .push--smart--two-fifths, .push--smart--four-tenths {
+    left: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003519}}
+  .push--smart--three-fifths, .push--smart--six-tenths {
+    left: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003520}}
+  .push--smart--four-fifths, .push--smart--eight-tenths {
+    left: 80%; }
+
+  /**
+   * Sixths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003526}}
+  .push--smart--one-sixth, .push--smart--two-twelfths {
+    left: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003530}}
+  .push--smart--five-sixths, .push--smart--ten-twelfths {
+    left: 83.333%; }
+
+  /**
+   * Eighths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003536}}
+  .push--smart--one-eighth {
+    left: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003538}}
+  .push--smart--three-eighths {
+    left: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003540}}
+  .push--smart--five-eighths {
+    left: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003542}}
+  .push--smart--seven-eighths {
+    left: 87.5%; }
+
+  /**
+   * Tenths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003548}}
+  .push--smart--one-tenth {
+    left: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003550}}
+  .push--smart--three-tenths {
+    left: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003554}}
+  .push--smart--seven-tenths {
+    left: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003556}}
+  .push--smart--nine-tenths {
+    left: 90%; }
+
+  /**
+   * Twelfths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003562}}
+  .push--smart--one-twelfth {
+    left: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003566}}
+  .push--smart--five-twelfths {
+    left: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003568}}
+  .push--smart--seven-twelfths {
+    left: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003572}}
+  .push--smart--eleven-twelfths {
+    left: 91.666%; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  /**
+   * Whole
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003490}}
+  .push--tab--one-whole {
+    left: 100%; }
+
+  /**
+   * Halves
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003496}}
+  .push--tab--one-half, .push--tab--two-quarters, .push--tab--three-sixths, .push--tab--four-eighths, .push--tab--five-tenths, .push--tab--six-twelfths {
+    left: 50%; }
+
+  /**
+   * Thirds
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003502}}
+  .push--tab--one-third, .push--tab--two-sixths, .push--tab--four-twelfths {
+    left: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003503}}
+  .push--tab--two-thirds, .push--tab--four-sixths, .push--tab--eight-twelfths {
+    left: 66.666%; }
+
+  /**
+   * Quarters
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003509}}
+  .push--tab--one-quarter, .push--tab--two-eighths, .push--tab--three-twelfths {
+    left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003511}}
+  .push--tab--three-quarters, .push--tab--six-eighths, .push--tab--nine-twelfths {
+    left: 75%; }
+
+  /**
+   * Fifths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003517}}
+  .push--tab--one-fifth, .push--tab--two-tenths {
+    left: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003518}}
+  .push--tab--two-fifths, .push--tab--four-tenths {
+    left: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003519}}
+  .push--tab--three-fifths, .push--tab--six-tenths {
+    left: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003520}}
+  .push--tab--four-fifths, .push--tab--eight-tenths {
+    left: 80%; }
+
+  /**
+   * Sixths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003526}}
+  .push--tab--one-sixth, .push--tab--two-twelfths {
+    left: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003530}}
+  .push--tab--five-sixths, .push--tab--ten-twelfths {
+    left: 83.333%; }
+
+  /**
+   * Eighths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003536}}
+  .push--tab--one-eighth {
+    left: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003538}}
+  .push--tab--three-eighths {
+    left: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003540}}
+  .push--tab--five-eighths {
+    left: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003542}}
+  .push--tab--seven-eighths {
+    left: 87.5%; }
+
+  /**
+   * Tenths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003548}}
+  .push--tab--one-tenth {
+    left: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003550}}
+  .push--tab--three-tenths {
+    left: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003554}}
+  .push--tab--seven-tenths {
+    left: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003556}}
+  .push--tab--nine-tenths {
+    left: 90%; }
+
+  /**
+   * Twelfths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003562}}
+  .push--tab--one-twelfth {
+    left: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003566}}
+  .push--tab--five-twelfths {
+    left: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003568}}
+  .push--tab--seven-twelfths {
+    left: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003572}}
+  .push--tab--eleven-twelfths {
+    left: 91.666%; } }
+@media only screen and (max-width: 1023px) {
+  /**
+   * Whole
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003490}}
+  .push--portable--one-whole {
+    left: 100%; }
+
+  /**
+   * Halves
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003496}}
+  .push--portable--one-half, .push--portable--two-quarters, .push--portable--three-sixths, .push--portable--four-eighths, .push--portable--five-tenths, .push--portable--six-twelfths {
+    left: 50%; }
+
+  /**
+   * Thirds
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003502}}
+  .push--portable--one-third, .push--portable--two-sixths, .push--portable--four-twelfths {
+    left: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003503}}
+  .push--portable--two-thirds, .push--portable--four-sixths, .push--portable--eight-twelfths {
+    left: 66.666%; }
+
+  /**
+   * Quarters
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003509}}
+  .push--portable--one-quarter, .push--portable--two-eighths, .push--portable--three-twelfths {
+    left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003511}}
+  .push--portable--three-quarters, .push--portable--six-eighths, .push--portable--nine-twelfths {
+    left: 75%; }
+
+  /**
+   * Fifths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003517}}
+  .push--portable--one-fifth, .push--portable--two-tenths {
+    left: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003518}}
+  .push--portable--two-fifths, .push--portable--four-tenths {
+    left: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003519}}
+  .push--portable--three-fifths, .push--portable--six-tenths {
+    left: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003520}}
+  .push--portable--four-fifths, .push--portable--eight-tenths {
+    left: 80%; }
+
+  /**
+   * Sixths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003526}}
+  .push--portable--one-sixth, .push--portable--two-twelfths {
+    left: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003530}}
+  .push--portable--five-sixths, .push--portable--ten-twelfths {
+    left: 83.333%; }
+
+  /**
+   * Eighths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003536}}
+  .push--portable--one-eighth {
+    left: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003538}}
+  .push--portable--three-eighths {
+    left: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003540}}
+  .push--portable--five-eighths {
+    left: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003542}}
+  .push--portable--seven-eighths {
+    left: 87.5%; }
+
+  /**
+   * Tenths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003548}}
+  .push--portable--one-tenth {
+    left: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003550}}
+  .push--portable--three-tenths {
+    left: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003554}}
+  .push--portable--seven-tenths {
+    left: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003556}}
+  .push--portable--nine-tenths {
+    left: 90%; }
+
+  /**
+   * Twelfths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003562}}
+  .push--portable--one-twelfth {
+    left: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003566}}
+  .push--portable--five-twelfths {
+    left: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003568}}
+  .push--portable--seven-twelfths {
+    left: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003572}}
+  .push--portable--eleven-twelfths {
+    left: 91.666%; } }
+@media only screen and (min-width: 1024px) {
+  /**
+   * Whole
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003490}}
+  .push--desk--one-whole {
+    left: 100%; }
+
+  /**
+   * Halves
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003496}}
+  .push--desk--one-half, .push--desk--two-quarters, .push--desk--three-sixths, .push--desk--four-eighths, .push--desk--five-tenths, .push--desk--six-twelfths {
+    left: 50%; }
+
+  /**
+   * Thirds
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003502}}
+  .push--desk--one-third, .push--desk--two-sixths, .push--desk--four-twelfths {
+    left: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003503}}
+  .push--desk--two-thirds, .push--desk--four-sixths, .push--desk--eight-twelfths {
+    left: 66.666%; }
+
+  /**
+   * Quarters
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003509}}
+  .push--desk--one-quarter, .push--desk--two-eighths, .push--desk--three-twelfths {
+    left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003511}}
+  .push--desk--three-quarters, .push--desk--six-eighths, .push--desk--nine-twelfths {
+    left: 75%; }
+
+  /**
+   * Fifths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003517}}
+  .push--desk--one-fifth, .push--desk--two-tenths {
+    left: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003518}}
+  .push--desk--two-fifths, .push--desk--four-tenths {
+    left: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003519}}
+  .push--desk--three-fifths, .push--desk--six-tenths {
+    left: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003520}}
+  .push--desk--four-fifths, .push--desk--eight-tenths {
+    left: 80%; }
+
+  /**
+   * Sixths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003526}}
+  .push--desk--one-sixth, .push--desk--two-twelfths {
+    left: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003530}}
+  .push--desk--five-sixths, .push--desk--ten-twelfths {
+    left: 83.333%; }
+
+  /**
+   * Eighths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003536}}
+  .push--desk--one-eighth {
+    left: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003538}}
+  .push--desk--three-eighths {
+    left: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003540}}
+  .push--desk--five-eighths {
+    left: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003542}}
+  .push--desk--seven-eighths {
+    left: 87.5%; }
+
+  /**
+   * Tenths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003548}}
+  .push--desk--one-tenth {
+    left: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003550}}
+  .push--desk--three-tenths {
+    left: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003554}}
+  .push--desk--seven-tenths {
+    left: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003556}}
+  .push--desk--nine-tenths {
+    left: 90%; }
+
+  /**
+   * Twelfths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003562}}
+  .push--desk--one-twelfth {
+    left: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003566}}
+  .push--desk--five-twelfths {
+    left: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003568}}
+  .push--desk--seven-twelfths {
+    left: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003572}}
+  .push--desk--eleven-twelfths {
+    left: 91.666%; } }
+/*------------------------------------*\
+    $PULL
+\*------------------------------------*/
+/**
+ * Pull classes, to move grid items back to the left by certain amounts.
+ */
+/**
+ * Not a particularly great selector, but the DRYest way to do things.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003702}}
+[class*="pull--"] {
+  position: relative; }
+
+/**
+ * Whole
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003612}}
+.pull--one-whole {
+  right: 100%; }
+
+/**
+ * Halves
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003618}}
+.pull--one-half, .pull--two-quarters, .pull--three-sixths, .pull--four-eighths, .pull--five-tenths, .pull--six-twelfths {
+  right: 50%; }
+
+/**
+ * Thirds
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003624}}
+.pull--one-third, .pull--two-sixths, .pull--four-twelfths {
+  right: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003625}}
+.pull--two-thirds, .pull--four-sixths, .pull--eight-twelfths {
+  right: 66.666%; }
+
+/**
+ * Quarters
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003631}}
+.pull--one-quarter, .pull--two-eighths, .pull--three-twelfths {
+  right: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003633}}
+.pull--three-quarters, .pull--six-eighths, .pull--nine-twelfths {
+  right: 75%; }
+
+/**
+ * Fifths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003639}}
+.pull--one-fifth, .pull--two-tenths {
+  right: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003640}}
+.pull--two-fifths, .pull--four-tenths {
+  right: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003641}}
+.pull--three-fifths, .pull--six-tenths {
+  right: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003642}}
+.pull--four-fifths, .pull--eight-tenths {
+  right: 80%; }
+
+/**
+ * Sixths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003648}}
+.pull--one-sixth, .pull--two-twelfths {
+  right: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003652}}
+.pull--five-sixths, .pull--ten-twelfths {
+  right: 83.333%; }
+
+/**
+ * Eighths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003658}}
+.pull--one-eighth {
+  right: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003660}}
+.pull--three-eighths {
+  right: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003662}}
+.pull--five-eighths {
+  right: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003664}}
+.pull--seven-eighths {
+  right: 87.5%; }
+
+/**
+ * Tenths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003670}}
+.pull--one-tenth {
+  right: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003672}}
+.pull--three-tenths {
+  right: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003676}}
+.pull--seven-tenths {
+  right: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003678}}
+.pull--nine-tenths {
+  right: 90%; }
+
+/**
+ * Twelfths
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003684}}
+.pull--one-twelfth {
+  right: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003688}}
+.pull--five-twelfths {
+  right: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003690}}
+.pull--seven-twelfths {
+  right: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003694}}
+.pull--eleven-twelfths {
+  right: 91.666%; }
+
+@media only screen and (max-width: 480px) {
+  /**
+   * Whole
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003612}}
+  .pull--smart--one-whole {
+    right: 100%; }
+
+  /**
+   * Halves
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003618}}
+  .pull--smart--one-half, .pull--smart--two-quarters, .pull--smart--three-sixths, .pull--smart--four-eighths, .pull--smart--five-tenths, .pull--smart--six-twelfths {
+    right: 50%; }
+
+  /**
+   * Thirds
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003624}}
+  .pull--smart--one-third, .pull--smart--two-sixths, .pull--smart--four-twelfths {
+    right: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003625}}
+  .pull--smart--two-thirds, .pull--smart--four-sixths, .pull--smart--eight-twelfths {
+    right: 66.666%; }
+
+  /**
+   * Quarters
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003631}}
+  .pull--smart--one-quarter, .pull--smart--two-eighths, .pull--smart--three-twelfths {
+    right: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003633}}
+  .pull--smart--three-quarters, .pull--smart--six-eighths, .pull--smart--nine-twelfths {
+    right: 75%; }
+
+  /**
+   * Fifths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003639}}
+  .pull--smart--one-fifth, .pull--smart--two-tenths {
+    right: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003640}}
+  .pull--smart--two-fifths, .pull--smart--four-tenths {
+    right: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003641}}
+  .pull--smart--three-fifths, .pull--smart--six-tenths {
+    right: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003642}}
+  .pull--smart--four-fifths, .pull--smart--eight-tenths {
+    right: 80%; }
+
+  /**
+   * Sixths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003648}}
+  .pull--smart--one-sixth, .pull--smart--two-twelfths {
+    right: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003652}}
+  .pull--smart--five-sixths, .pull--smart--ten-twelfths {
+    right: 83.333%; }
+
+  /**
+   * Eighths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003658}}
+  .pull--smart--one-eighth {
+    right: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003660}}
+  .pull--smart--three-eighths {
+    right: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003662}}
+  .pull--smart--five-eighths {
+    right: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003664}}
+  .pull--smart--seven-eighths {
+    right: 87.5%; }
+
+  /**
+   * Tenths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003670}}
+  .pull--smart--one-tenth {
+    right: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003672}}
+  .pull--smart--three-tenths {
+    right: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003676}}
+  .pull--smart--seven-tenths {
+    right: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003678}}
+  .pull--smart--nine-tenths {
+    right: 90%; }
+
+  /**
+   * Twelfths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003684}}
+  .pull--smart--one-twelfth {
+    right: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003688}}
+  .pull--smart--five-twelfths {
+    right: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003690}}
+  .pull--smart--seven-twelfths {
+    right: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003694}}
+  .pull--smart--eleven-twelfths {
+    right: 91.666%; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  /**
+   * Whole
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003612}}
+  .pull--tab--one-whole {
+    right: 100%; }
+
+  /**
+   * Halves
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003618}}
+  .pull--tab--one-half, .pull--tab--two-quarters, .pull--tab--three-sixths, .pull--tab--four-eighths, .pull--tab--five-tenths, .pull--tab--six-twelfths {
+    right: 50%; }
+
+  /**
+   * Thirds
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003624}}
+  .pull--tab--one-third, .pull--tab--two-sixths, .pull--tab--four-twelfths {
+    right: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003625}}
+  .pull--tab--two-thirds, .pull--tab--four-sixths, .pull--tab--eight-twelfths {
+    right: 66.666%; }
+
+  /**
+   * Quarters
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003631}}
+  .pull--tab--one-quarter, .pull--tab--two-eighths, .pull--tab--three-twelfths {
+    right: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003633}}
+  .pull--tab--three-quarters, .pull--tab--six-eighths, .pull--tab--nine-twelfths {
+    right: 75%; }
+
+  /**
+   * Fifths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003639}}
+  .pull--tab--one-fifth, .pull--tab--two-tenths {
+    right: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003640}}
+  .pull--tab--two-fifths, .pull--tab--four-tenths {
+    right: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003641}}
+  .pull--tab--three-fifths, .pull--tab--six-tenths {
+    right: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003642}}
+  .pull--tab--four-fifths, .pull--tab--eight-tenths {
+    right: 80%; }
+
+  /**
+   * Sixths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003648}}
+  .pull--tab--one-sixth, .pull--tab--two-twelfths {
+    right: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003652}}
+  .pull--tab--five-sixths, .pull--tab--ten-twelfths {
+    right: 83.333%; }
+
+  /**
+   * Eighths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003658}}
+  .pull--tab--one-eighth {
+    right: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003660}}
+  .pull--tab--three-eighths {
+    right: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003662}}
+  .pull--tab--five-eighths {
+    right: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003664}}
+  .pull--tab--seven-eighths {
+    right: 87.5%; }
+
+  /**
+   * Tenths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003670}}
+  .pull--tab--one-tenth {
+    right: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003672}}
+  .pull--tab--three-tenths {
+    right: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003676}}
+  .pull--tab--seven-tenths {
+    right: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003678}}
+  .pull--tab--nine-tenths {
+    right: 90%; }
+
+  /**
+   * Twelfths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003684}}
+  .pull--tab--one-twelfth {
+    right: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003688}}
+  .pull--tab--five-twelfths {
+    right: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003690}}
+  .pull--tab--seven-twelfths {
+    right: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003694}}
+  .pull--tab--eleven-twelfths {
+    right: 91.666%; } }
+@media only screen and (max-width: 1023px) {
+  /**
+   * Whole
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003612}}
+  .pull--portable--one-whole {
+    right: 100%; }
+
+  /**
+   * Halves
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003618}}
+  .pull--portable--one-half, .pull--portable--two-quarters, .pull--portable--three-sixths, .pull--portable--four-eighths, .pull--portable--five-tenths, .pull--portable--six-twelfths {
+    right: 50%; }
+
+  /**
+   * Thirds
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003624}}
+  .pull--portable--one-third, .pull--portable--two-sixths, .pull--portable--four-twelfths {
+    right: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003625}}
+  .pull--portable--two-thirds, .pull--portable--four-sixths, .pull--portable--eight-twelfths {
+    right: 66.666%; }
+
+  /**
+   * Quarters
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003631}}
+  .pull--portable--one-quarter, .pull--portable--two-eighths, .pull--portable--three-twelfths {
+    right: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003633}}
+  .pull--portable--three-quarters, .pull--portable--six-eighths, .pull--portable--nine-twelfths {
+    right: 75%; }
+
+  /**
+   * Fifths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003639}}
+  .pull--portable--one-fifth, .pull--portable--two-tenths {
+    right: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003640}}
+  .pull--portable--two-fifths, .pull--portable--four-tenths {
+    right: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003641}}
+  .pull--portable--three-fifths, .pull--portable--six-tenths {
+    right: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003642}}
+  .pull--portable--four-fifths, .pull--portable--eight-tenths {
+    right: 80%; }
+
+  /**
+   * Sixths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003648}}
+  .pull--portable--one-sixth, .pull--portable--two-twelfths {
+    right: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003652}}
+  .pull--portable--five-sixths, .pull--portable--ten-twelfths {
+    right: 83.333%; }
+
+  /**
+   * Eighths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003658}}
+  .pull--portable--one-eighth {
+    right: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003660}}
+  .pull--portable--three-eighths {
+    right: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003662}}
+  .pull--portable--five-eighths {
+    right: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003664}}
+  .pull--portable--seven-eighths {
+    right: 87.5%; }
+
+  /**
+   * Tenths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003670}}
+  .pull--portable--one-tenth {
+    right: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003672}}
+  .pull--portable--three-tenths {
+    right: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003676}}
+  .pull--portable--seven-tenths {
+    right: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003678}}
+  .pull--portable--nine-tenths {
+    right: 90%; }
+
+  /**
+   * Twelfths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003684}}
+  .pull--portable--one-twelfth {
+    right: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003688}}
+  .pull--portable--five-twelfths {
+    right: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003690}}
+  .pull--portable--seven-twelfths {
+    right: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003694}}
+  .pull--portable--eleven-twelfths {
+    right: 91.666%; } }
+@media only screen and (min-width: 1024px) {
+  /**
+   * Whole
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003612}}
+  .pull--desk--one-whole {
+    right: 100%; }
+
+  /**
+   * Halves
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003618}}
+  .pull--desk--one-half, .pull--desk--two-quarters, .pull--desk--three-sixths, .pull--desk--four-eighths, .pull--desk--five-tenths, .pull--desk--six-twelfths {
+    right: 50%; }
+
+  /**
+   * Thirds
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003624}}
+  .pull--desk--one-third, .pull--desk--two-sixths, .pull--desk--four-twelfths {
+    right: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003625}}
+  .pull--desk--two-thirds, .pull--desk--four-sixths, .pull--desk--eight-twelfths {
+    right: 66.666%; }
+
+  /**
+   * Quarters
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003631}}
+  .pull--desk--one-quarter, .pull--desk--two-eighths, .pull--desk--three-twelfths {
+    right: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003633}}
+  .pull--desk--three-quarters, .pull--desk--six-eighths, .pull--desk--nine-twelfths {
+    right: 75%; }
+
+  /**
+   * Fifths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003639}}
+  .pull--desk--one-fifth, .pull--desk--two-tenths {
+    right: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003640}}
+  .pull--desk--two-fifths, .pull--desk--four-tenths {
+    right: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003641}}
+  .pull--desk--three-fifths, .pull--desk--six-tenths {
+    right: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003642}}
+  .pull--desk--four-fifths, .pull--desk--eight-tenths {
+    right: 80%; }
+
+  /**
+   * Sixths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003648}}
+  .pull--desk--one-sixth, .pull--desk--two-twelfths {
+    right: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003652}}
+  .pull--desk--five-sixths, .pull--desk--ten-twelfths {
+    right: 83.333%; }
+
+  /**
+   * Eighths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003658}}
+  .pull--desk--one-eighth {
+    right: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003660}}
+  .pull--desk--three-eighths {
+    right: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003662}}
+  .pull--desk--five-eighths {
+    right: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003664}}
+  .pull--desk--seven-eighths {
+    right: 87.5%; }
+
+  /**
+   * Tenths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003670}}
+  .pull--desk--one-tenth {
+    right: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003672}}
+  .pull--desk--three-tenths {
+    right: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003676}}
+  .pull--desk--seven-tenths {
+    right: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003678}}
+  .pull--desk--nine-tenths {
+    right: 90%; }
+
+  /**
+   * Twelfths
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003684}}
+  .pull--desk--one-twelfth {
+    right: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003688}}
+  .pull--desk--five-twelfths {
+    right: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003690}}
+  .pull--desk--seven-twelfths {
+    right: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/tools\/_csswizardry-grids\.scss}line{font-family:\00003694}}
+  .pull--desk--eleven-twelfths {
+    right: 91.666%; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/style\.scss}line{font-family:\0000316}}
+body {
+  font-family: "PT Sans", "sans-serif";
+  font-size: 16px;
+  line-height: 1.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/style\.scss}line{font-family:\0000322}}
+h1 {
+  font-family: "Dosis", "sans-serif"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/style\.scss}line{font-family:\0000326}}
+.bartek {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/klub-jagiellonski\/wp-content\/themes\/klub-jagiellonski\/assets\/scss\/style\.scss}line{font-family:\0000330}}
+.onet {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }

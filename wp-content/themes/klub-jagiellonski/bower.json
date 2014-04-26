@@ -1,0 +1,17 @@
+{
+  "name": "KJ",
+  "version": "1.0",
+  "main": "",
+  "ignore": [],
+  "dependencies": {
+    "normalize-scss": "3.0.1",
+    "lodash": "latest",
+    "csswizardry-grids": "2.2.0"
+  },
+  "install": {
+    "path" : {
+      "scss": "assets/scss/tools",
+      "js": "assets/js/plugins"
+    }
+  }
+}

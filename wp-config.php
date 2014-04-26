@@ -13,7 +13,7 @@
  *
  * @package WordPress
  */
- 
+
 // Include local configuration
 if (file_exists(dirname(__FILE__) . '/local-config.php')) {
 	include(dirname(__FILE__) . '/local-config.php');
@@ -79,7 +79,7 @@ $table_prefix  = 'kj_';
  * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
  * language support.
  */
-define('WPLANG', '');
+define('WPLANG', 'pl_PL');
 
 
 
